@@ -1,0 +1,11 @@
+AllCops:
+  TargetRubyVersion: 3.0
+inherit_mode:
+  merge:
+    - Exclude
+
+inherit_gem:
+  standard: config/base.yml
+
+require:
+  - standard/cop/block_single_line_braces
