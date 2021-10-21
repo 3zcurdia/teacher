@@ -14,6 +14,7 @@ gem "sqlite3", "~> 1.4"
 group :development, :test do
   gem "pry-byebug"
   gem "rubocop", require: false
+  gem "rubocop-rails", require: false
   gem "standard", require: false
 end
 
