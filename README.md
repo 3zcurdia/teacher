@@ -1,24 +1,30 @@
-# README
+# Teacher
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample rails application for practical workshops
 
-Things you may want to cover:
+* Ruby version: 3.0.2
+* Rails version: 6.1.4
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
+## Seutp
 
 * Database creation
 
+```
+  rake db:create
+```
+
 * Database initialization
 
-* How to run the test suite
+```
+  rake db:create
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Test
 
-* Deployment instructions
+```
+  rails test
+```
 
-* ...
+## License
+
+MIT License Copyright (c) 2021 Luis Ezcurdia
