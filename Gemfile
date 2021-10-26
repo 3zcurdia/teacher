@@ -26,3 +26,5 @@ end
 group :development do
   gem "listen", "~> 3.8"
 end
+
+gem "money-rails", "~> 1.15"
