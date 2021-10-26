@@ -1,1 +1,10 @@
 <%= content_for(:title, "Chunky Bacon") %>
+
+<% @articles.each do |article| %>
+   <h2 class="title is-4"><%= article.title %></h2>
+   <h4 class="sub-title is-4"><%= article.published_at %></h4>
+
+   <p class="content">
+     <%= truncate article.content, length: 128 %>
+   </p>
+ <% end %>
