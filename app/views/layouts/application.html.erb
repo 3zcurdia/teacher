@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Teacher</title>
+    <meta charset="utf-8">
+    <title><%= content_for(:title) || "Teacher" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
 
   <body>
-    <%= yield %>
+    <section class="section">
+      <div class="container">
+        <% if content_for(:title).present? %>
+          <h1 class="title"><%= content_for(:title) %></h1>
+        <% end %>
+        <%= yield %>
+      </div>
+    </section>
   </body>
 </html>
