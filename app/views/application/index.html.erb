@@ -1,1 +1,10 @@
 <%= content_for(:title, "Chunky Bacon") %>
+
+<% @products.each do |product| %>
+   <h2 class="title is-4"><%= product.name %></h2>
+   <h4 class="sub-title is-4">$ <%= product.price_cents.to_f / 100.0 %></h4>
+
+   <p class="content">
+     <%= truncate product.description, length: 128 %>
+   </p>
+ <% end %>
