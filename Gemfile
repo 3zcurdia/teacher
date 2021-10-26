@@ -12,6 +12,7 @@ gem "sqlite3", "~> 1.4"
 # gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
+  gem "faker"
   gem "pry-byebug"
   gem "rubocop", require: false
   gem "rubocop-rails", require: false
