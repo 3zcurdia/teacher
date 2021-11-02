@@ -1,7 +1,11 @@
 require "test_helper"
 
 class ArticleTest < ActiveSupport::TestCase
+  def article
+    @article ||= articles(:one)
+  end
+
   test "fixture must be valid" do
-    assert articles(:one).valid?
+    assert article.valid?
   end
 end

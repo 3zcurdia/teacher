@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  article: one
+  content: An awesome post
+  auhtor: JoeDoe
+
+two:
+  article: one
+  content: Meh
+  auhtor: JaneDoe
