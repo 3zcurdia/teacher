@@ -15,6 +15,8 @@ gem "sprockets-rails"
 gem "stimulus-rails"
 gem "turbo-rails"
 
+gem "bcrypt", "~> 3.1.7"
+
 group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
   gem "faker"

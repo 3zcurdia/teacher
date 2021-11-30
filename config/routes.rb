@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     resources :articles, except: %i[new edit]
   end
   root to: "application#index"
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "logout", to: "sessions#destroy", as: "logout"
+  resources :sessions, only: %i[new create]
 end
