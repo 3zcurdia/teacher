@@ -15,6 +15,18 @@
   <body>
     <section class="section">
       <div class="container">
+        <% if flash[:notice].present? %>
+        <div class="notification is-primary is-light">
+          <button class="delete"></button>
+          <%= flash[:notice] %>
+        </div>
+        <% end %>
+        <% if flash[:alert].present? %>
+        <div class="notification is-warning is-light">
+          <button class="delete"></button>
+          <%= flash[:alert] %>
+        </div>
+        <% end %>
         <% if content_for(:title).present? %>
           <h1 class="title"><%= content_for(:title) %></h1>
         <% end %>
