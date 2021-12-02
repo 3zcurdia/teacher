@@ -16,6 +16,7 @@ gem "stimulus-rails"
 gem "turbo-rails"
 
 gem "bcrypt", "~> 3.1.7"
+gem "warden", "~> 1.2"
 
 group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
