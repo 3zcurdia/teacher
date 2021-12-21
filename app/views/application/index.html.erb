@@ -2,7 +2,7 @@
 
 <% @articles.each do |article| %>
   <h2 class="title is-4"><%= article.title %></h2>
-  <h4 class="sub-title is-4" data-controller="time" data-time-timestamp-value="<%= article.published_at.iso8601 %>"></h4>
+  <%= time_tag article.published_at, class: "sub-title is-4", "data-local": "time-ago" %>
 
    <p class="content">
      <%= truncate article.content, length: 128 %>
