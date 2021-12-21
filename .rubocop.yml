@@ -1,12 +1,35 @@
 AllCops:
+  NewCops: enable
   TargetRubyVersion: 3.0
-inherit_mode:
-  merge:
-    - Exclude
-
-inherit_gem:
-  standard: config/base.yml
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*.rb'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'log/**/*'
 
 require:
   - rubocop-rails
-  - standard/cop/block_single_line_braces
+  - rubocop-performance
+  - rubocop-minitest
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - test/**/*.rb
+    - app/controllers/**/*.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*.rb
+    - config/routes.rb
