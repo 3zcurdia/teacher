@@ -8,7 +8,7 @@ ruby "3.1.0"
 gem "jbuilder"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.1"
-gem "sqlite3", "~> 1.4"
+gem "pg", "~> 1.1"
 
 gem "importmap-rails"
 gem "sprockets-rails"
