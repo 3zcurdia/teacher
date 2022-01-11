@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_02_151328) do
+ActiveRecord::Schema.define(version: 2022_01_11_174003) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+  enable_extension "postgis"
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -21,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_11_02_151328) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.integer "article_id", null: false
+    t.bigint "article_id", null: false
     t.text "content"
     t.string "auhtor"
     t.datetime "created_at", precision: 6, null: false
