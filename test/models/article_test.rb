@@ -8,6 +8,6 @@ class ArticleTest < ActiveSupport::TestCase
   end
 
   test "fixture must be valid" do
-    assert article.valid?
+    assert_predicate article, :valid?
   end
 end

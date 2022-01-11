@@ -5,10 +5,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby File.read(".ruby-version").strip
 
+gem "activerecord-postgis-adapter", "~> 8.0"
 gem "jbuilder"
+gem "pg", "~> 1.1"
 gem "puma", "~> 6.1"
 gem "rails", "~> 7.0.4"
-gem "pg", "~> 1.1"
 
 gem "importmap-rails"
 gem "sprockets-rails"

@@ -8,6 +8,6 @@ class CommentTest < ActiveSupport::TestCase
   end
 
   test "fixture must be valid" do
-    assert comment.valid?
+    assert_predicate comment, :valid?
   end
 end

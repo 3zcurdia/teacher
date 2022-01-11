@@ -9,6 +9,7 @@ class Api::ArticlesControllerTest < ActionDispatch::IntegrationTest
 
   test "should get index" do
     get api_articles_url, as: :json
+
     assert_response :success
   end
 
@@ -22,11 +23,13 @@ class Api::ArticlesControllerTest < ActionDispatch::IntegrationTest
 
   test "should show article" do
     get api_article_url(@article), as: :json
+
     assert_response :success
   end
 
   test "should update article" do
     patch api_article_url(@article), params: { article: { title: "Nah" } }, as: :json
+
     assert_response :success
   end
 
