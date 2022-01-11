@@ -1,0 +1,6 @@
+<% content_for(:title, "Articles") %>
+<%= link_to "New article", new_article_path %>
+
+<div id="articles">
+  <%= render @articles %>
+</div>
