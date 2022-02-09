@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :articles do
+    resource :like, controller: "articles/likes", only: %i[update destroy]
+  end
   namespace :api do
     resources :articles, except: %i[new edit]
   end

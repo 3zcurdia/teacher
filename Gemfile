@@ -9,6 +9,7 @@ gem "jbuilder"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.1"
 gem "sqlite3", "~> 1.4"
+gem "bcrypt"
 
 gem "importmap-rails"
 gem "sprockets-rails"

@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+User.find_or_create_by(email: "test@example.com") do |u|
+  u.password = "secret123"
+end
+
 250.times do
   Article.create do |article|
     article.title = Faker::Hipster.sentence
