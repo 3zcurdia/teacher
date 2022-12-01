@@ -198,7 +198,7 @@ GEM
     sqlite3 (1.5.4-arm64-darwin)
     sqlite3 (1.5.4-x86_64-darwin)
     sqlite3 (1.5.4-x86_64-linux)
-    stimulus-rails (1.2.0)
+    stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     strscan (3.0.4)
     thor (1.2.1)
