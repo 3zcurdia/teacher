@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
+  layout -> { ApplicationLayout }
+
   def index
-    @articles = Article.all
+    render Articles::IndexView.new(articles: Article.all)
   end
 end

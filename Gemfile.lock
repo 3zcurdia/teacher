@@ -68,12 +68,15 @@ GEM
       tzinfo (~> 2.0)
     ast (2.4.2)
     builder (3.2.4)
+    cgi (0.3.6)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
     debug (1.7.2)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    erb (4.0.2)
+      cgi (>= 0.3.3)
     erubi (1.12.0)
     faker (3.1.1)
       i18n (>= 1.8.11, < 2)
@@ -126,6 +129,14 @@ GEM
     parallel (1.22.1)
     parser (3.2.1.1)
       ast (~> 2.4.1)
+    phlex (1.6.1)
+      concurrent-ruby (~> 1.2)
+      erb (>= 4)
+      zeitwerk (~> 2.6)
+    phlex-rails (0.9.0)
+      phlex (~> 1.6)
+      rails (>= 6.1, < 8)
+      zeitwerk (~> 2.6)
     puma (6.1.1)
       nio4r (~> 2.0)
     racc (1.6.2)
@@ -228,6 +239,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   listen (~> 3.8)
+  phlex-rails
   puma (~> 6.1)
   rails (~> 7.0.4)
   rubocop

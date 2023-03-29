@@ -11,6 +11,7 @@ gem "rails", "~> 7.0.4"
 gem "sqlite3", "~> 1.6"
 
 gem "importmap-rails"
+gem "phlex-rails"
 gem "sprockets-rails"
 gem "stimulus-rails"
 gem "turbo-rails"
