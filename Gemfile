@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.0"
+ruby File.read(".ruby-version").strip
 
 gem "puma", "~> 6.1"
 gem "rails", "~> 7.0.4"
