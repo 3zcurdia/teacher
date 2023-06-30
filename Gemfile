@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").strip
 
 gem "puma", "~> 6.3"
-gem "rails", "~> 7.0.5"
+gem "rails", "~> 7.0.6"
 gem "sqlite3", "~> 1.6"
 
 gem "importmap-rails"
