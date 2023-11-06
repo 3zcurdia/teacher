@@ -88,7 +88,7 @@ GEM
     drb (2.1.1)
       ruby2_keywords
     erubi (1.12.0)
-    faker (3.2.1)
+    faker (3.2.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     globalid (1.2.1)
