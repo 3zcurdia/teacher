@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").strip
 
 gem "puma", "~> 6.4"
 gem "rails", "~> 7.1.2"
-gem "sqlite3", "~> 1.6"
+gem "sqlite3", "~> 1.7"
 
 gem "importmap-rails"
 gem "sprockets-rails"
